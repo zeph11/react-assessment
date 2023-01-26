@@ -12,4 +12,5 @@
 | Branch               |                  Difficulty |                      Main Topics Covered                      |
 | :------------------- | --------------------------: | :-----------------------------------------------------------: |
 | [js/counter-app](https://github.com/OttrTechnology/react-assessment/tree/js/counter-app)       |                      :star: |             `props` `state` `conditional-render`              |
-| [js/shopping-list](https://github.com/OttrTechnology/react-assessment/tree/js/shopping-list)       |                      :star: |             `state` `array`              |
+| [js/shopping-list](https://github.com/OttrTechnology/react-assessment/tree/js/shopping-list)       |                      :star::star: |             `state` `data-mapping` `array-manipulation`              |
+| [js/gallery](https://github.com/OttrTechnology/react-assessment/tree/js/gallery)       |                      :star::star::star: |             `APIs` `data-mapping`              |
