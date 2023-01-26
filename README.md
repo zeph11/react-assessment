@@ -6,4 +6,4 @@ Also, in the `App.js` make the `<p>Why so negative?</p>` render only if the coun
 
 ---
 
-[:arrow_left: Go back to main branch](https://gitlab.com/ottr1/coding-challenges/react-assessment/-/tree/main#getting-started)
+[:arrow_left: Go back to main branch](https://github.com/OttrTechnology/react-assessment#getting-started)
