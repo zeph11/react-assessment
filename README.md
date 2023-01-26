@@ -1,14 +1,16 @@
-## Getting started
+# Shopping List
+A simple CRUD shopping list.
 
-1. Fork this project.
-2. Clone **your forked repo** in your local machine.
-3. Visit the branch of the challenge you wish to tackle. (recommended to go in preferred order)
-4. <kbd>Enter</kbd> `yarn` in your terminal to install dependencies of the challenge. (Required each time you visit a new challenge)
-5. <kbd>Enter</kbd> `yarn start` to run the challenge and begin your tasks.
-6. You'll find further instructions in the `README.md` file of each challenge.
+## TODO
+A user should be able to do the following:
+- Add new items to the shopping list.
+- Remove items from the shopping list.
+- Check off an item from the shopping list. (Checked items should be crossed out ~~like this~~)
 
-# Challenges (in preferred order)
+## Bonus
+- Prevent empty string from being entered. (show an error message or disable the button)
+- Prevent duplicate entries. (You can show an error message or a browser alert)
 
-| Branch               |                  Difficulty |                      Main Topics Covered                      |
-| :------------------- | --------------------------: | :-----------------------------------------------------------: |
-| [js/counter-app](https://github.com/OttrTechnology/react-assessment/tree/js/counter-app)       |                      :star: |             `props` `state` `conditional-render`              |
+---
+
+[:arrow_left: Go back to main branch](https://github.com/OttrTechnology/react-assessment#getting-started)
