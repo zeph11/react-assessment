@@ -1,0 +1,26 @@
+.container {
+  @apply flex flex-col items-center rounded-lg p-4;
+}
+
+.container:hover {
+  @apply transition duration-500 ease-in-out shadow-slate-500/50 shadow-2xl;
+}
+
+.image {
+  @apply brightness-50;
+  height: 11em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.container:hover img {
+  @apply transition duration-500 ease-in-out scale-105 brightness-100;
+}
+
+.caption {
+  @apply text-xs text-center text-slate-400;
+}
+
+.container:hover .caption {
+  @apply transition duration-500 ease-in-out text-slate-50;
+}

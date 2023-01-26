@@ -1,0 +1,11 @@
+.container {
+  @apply cursor-pointer rounded-lg border border-slate-600 p-4 select-none;
+}
+
+.container:hover {
+  @apply border-slate-300;
+}
+
+.container:active {
+  @apply opacity-60;
+}
