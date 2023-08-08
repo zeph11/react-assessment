@@ -1,6 +1,6 @@
 ## Getting started
 
-1. Clone this project.
+1. Fork this project (uncheck the option to copy main branch only).
 2. <kbd>Enter</kbd> `yarn` to install the required project dependencies.
 3. Visit the branch of the challenge you wish to tackle. (recommended to go in preferred order)
 4. <kbd>Enter</kbd> `yarn dev` to run the challenge and begin your tasks.
