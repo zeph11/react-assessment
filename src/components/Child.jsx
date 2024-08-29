@@ -1,10 +1,10 @@
-const Child = (props) => {
+const Child = ({ value, setValue }) => {
   const handleMinusClick = () => {
-    props.setValue(props.value - 1);
+    setValue(value - 1);
   };
 
   const handlePlusClick = () => {
-    props.setValue(props.value + 1);
+    setValue(value + 1);
   };
 
   return (
