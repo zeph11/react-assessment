@@ -17,7 +17,12 @@ export const ShoppingListItem = (props) => {
         {props.item}
       </h3>
 
-      <button className={classes.removeButton}>x</button>
+      <button
+        className={classes.removeButton}
+        onClick={() => props.removeItem(props.id)}
+      >
+        x
+      </button>
     </div>
   );
 };
