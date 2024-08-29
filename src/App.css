@@ -41,3 +41,11 @@
 /* .sub_text{
   display:none;
 } */
+
+.display_text{
+  visibility:hidden;
+  /* display: none; */
+  border:1px solid lime;
+  /* position: absolute;
+  top: 100%;  */
+}
