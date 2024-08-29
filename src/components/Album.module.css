@@ -1,5 +1,5 @@
 .container {
-  @apply cursor-pointer rounded-lg border border-slate-600 p-4 select-none;
+  @apply cursor-pointer rounded-lg border border-slate-600 p-4 select-none ;
 }
 
 .container:hover {
