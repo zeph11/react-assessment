@@ -6,11 +6,11 @@ function App() {
   const [shoppingList, setShoppingList] = useState([]); //state to maintain the shopping list
   const [id, setId] = useState(0); // state to maintain and increament id for each item
   const [item, setItem] = useState(""); //state to capture item from textbox
-  const [duplicatetext, setduplicatetext] = useState(false);
+  // const [items,setItems]=useState()
+  const [duplicateitem, setduplicateitem] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (item.trim() !== " ") {
       addItemtoList(item);
     }
@@ -21,11 +21,10 @@ function App() {
     const checkDeuplicate = shoppingList.some((list) => list.name === item);
 
     if (checkDeuplicate) {
-      // alert("already presemt");
-      setduplicatetext(true);
+      setduplicateitem(item);
       return;
     } else {
-      setduplicatetext(false);
+      setduplicateitem("");
     }
 
     const newItem = {
@@ -70,10 +69,10 @@ function App() {
       </div>
       <p
         className={
-          duplicatetext ? "text-red-400 flex justify-center" : "invisible"
+          duplicateitem ? "text-red-400 flex justify-center" : "invisible"
         }
       >
-        The item is already in the list
+        The item is already in the list : {duplicateitem}
       </p>
       <div className="v__list-container overflow-y-auto">
         {shoppingList.length > 0 ? (
@@ -84,7 +83,6 @@ function App() {
                 key={item.id}
                 id={item.id}
                 removeItem={removeItem}
-                // setShoppingList={setShoppingList}
               />
             );
           })
