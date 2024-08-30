@@ -1,3 +1,4 @@
+//CUSTOM HOOK TO FETCH PHOTOS FROM GIVEN ALBUMID
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -8,7 +9,6 @@ const useFetchPhotos = (albumId) => {
 
   useEffect(() => {
     if (!albumId) {
-      console.log("null id");
       return;
     }
     const getPhotos = async () => {
@@ -16,11 +16,11 @@ const useFetchPhotos = (albumId) => {
       try {
         const response = await axios.get(
           `${base_URI}/albums/${albumId}/photos`
-          //   "https://jsonplaceholder.typicode.com/albums/{}/photos"
         );
         setPhotos(response.data);
       } catch (err) {
         console.log("Failed to fetch photos:", err);
+        alert("Failed to load the image.");
       }
       setLoading(false);
     };

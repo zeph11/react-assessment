@@ -1,3 +1,4 @@
+//CUSTOM HOOK TO FETCH ALL THE ALBUMS
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -22,8 +23,7 @@ const useFetchAlbum = () => {
     getAlbum();
   }, []);
 
-  // console.log(status);
-  return { data, loading };
+  return { data, loading, status };
 };
 
 export default useFetchAlbum;
