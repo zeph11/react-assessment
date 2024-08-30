@@ -6,8 +6,8 @@ function App() {
   const [shoppingList, setShoppingList] = useState([]); //state to maintain the shopping list
   const [id, setId] = useState(0); // state to maintain and increament id for each item
   const [item, setItem] = useState(""); //state to capture item from textbox
-  // const [items,setItems]=useState()
   const [duplicateitem, setduplicateitem] = useState("");
+  const [addedItem, setAddedItem] = useState({ id: 0, item: "" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
